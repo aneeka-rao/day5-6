@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <script>
+        let array1=[1, 2, 3, 4, 5]
+console.log(array1.length)
+let mixedDataTypes=[1, "string", undefined, null, false, true, 5]
+console.log(mixedDataTypes.length)
+let itCompanies=["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+console.log(itCompanies)
+console.log(itCompanies.length)
+for(comapny of itCompanies){
+    console.log(comapny)
+}
+for(i=0; i<=itCompanies.length-1; i++){
+    console.log(itCompanies[i].toUpperCase())
+}
+console.log(itCompanies.join(", "))
+if(itCompanies.includes("Google")){
+    console.log("This company is found.")
+}
+else{
+    console.log("Not found.")
+}
+console.log(itCompanies.slice(0, 3))
+console.log(itCompanies.slice(4, 8))
+let shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift("Meat");
+shoppingCart.shift("Sugar");
+shoppingCart[2]="Green Tea"
+console.log(shoppingCart)
+let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort())
+console.log(ages[0])
+console.log(ages[ages.length-1])
+sum=0
+for(i=0; i<=ages.length-1; i++){
+    sum+=ages[i]
+}
+mean=sum/ages.length
+range=ages[ages.length-1]-ages[0]
+console.log(mean)
+console.log(range)
+let numbers=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for(num in numbers){
+    answer=num*num
+    console.log(num + " x " +  num + " = " + answer)
+}
+for(num in numbers){
+    answer=num*num
+    answer2=num*num*num
+    console.log(num + " " + answer + " " + answer2)
+}
+</script>
+</body>
+</html>
